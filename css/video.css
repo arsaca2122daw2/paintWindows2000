@@ -1,0 +1,63 @@
+*{
+    background-color: #c0c0c0;
+}
+
+#container{
+    padding: 80px;
+}
+
+#botones{
+    display: grid;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#botonplay{
+    background-color:rgb(165, 42, 165);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color: white;
+    width: 100%;
+    padding: 2vh;
+}
+#botonpause{
+    background-color:rgb(165, 42, 165);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color: white;
+    width: 100%;
+    padding: 2vh;
+}
+#botonstop{
+    background-color:rgb(165, 42, 165);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color: white;
+    width: 100%;
+    padding: 2vh;
+}
+#botonplay:hover{
+    background-color: rgb(65, 60, 60);
+}
+#botonpause:hover{
+    background-color: rgb(65, 60, 60);
+}
+#botonstop:hover{
+    background-color: rgb(65, 60, 60);
+}
+
+#timeOut{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+#video{
+    width: 100%;
+    border: 5px solid black;
+    margin-bottom: 5vh;
+}
+
+#button{
+    width: 100%;
+}

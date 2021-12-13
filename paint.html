@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint</title>
+    <link rel="shortcut icon" href="/imagenes_herramientas/favicon.png">
+    <link href="css/estils.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div clas="main">
+      <div class="menus">
+        <a href="index.html"><button class="archivo">Inici</button></a>
+      </div>
+      <div class="engrudo">
+        <div class="herramientas">
+          <button class="lapiz" onclick="lapiz(1)"></button>
+          <button class="goma" onclick="lapiz(2)"></button>
+          <button class="pincel" onclick="lapiz(3)"></button>
+          <button class="lineaDisc" onclick="lineaDiscontinua()"></button>
+          <button id="texto"></button>
+          <button id="italic"></button>
+          <button id="negrita"></button>
+          <button id="fuente"></button>
+          <button id="linea"></button>
+          <button id="circulo"></button>
+          <button id="rectangulo"></button>
+          <button id="triangulo"></button>
+          <button id="relleno"></button>
+          <button id="imagenMas"></button>
+          <div class="tipodeherramienta" >
+            <div class="herramientaGrosor">
+              <button class="2px" onclick="elegirGrosor(2)">2px</button>
+              <button class="4px" onclick="elegirGrosor(4)">4px</button>
+              <button class="6px" onclick="elegirGrosor(6)">6px</button>
+              <button class="8px" onclick="elegirGrosor(8)">8px</button>
+              <button class="10px" onclick="elegirGrosor(10)">10px</button>
+              <button class="10px" onclick="elegirGrosor(12)">12px</button>
+              <button class="10px" onclick="elegirGrosor(14)">14px</button>
+              <button class="10px" onclick="elegirGrosor(16)">16px</button>
+              <button class="10px" onclick="elegirGrosor(18)">18px</button>
+              <button class="10px" onclick="elegirGrosor(20)">20px</button>
+              <button class="10px" onclick="elegirGrosor(40)">40px</button>
+              <button class="10px" onclick="elegirGrosor(60)">60px</button>
+            </div>
+          </div>
+        </div>
+        <div class="canvas">
+          <canvas id="canvas" height="700" width="1400"></canvas>
+        </div>
+      </div>
+
+      <div class="colores">
+        <div class="colorActual">
+          <div class="color" id="color"></div>
+        </div>
+        <div>
+          <button id="borrarLienzo"></button>
+        </div>
+        <div>
+          <button id="ctrlZ"></button>
+        </div>
+        <div>
+          <button id="negativo"></button>
+        </div>
+        <div>
+          <button id="ByN"></button>
+        </div>
+        <div>
+          <button id="guardarImg"></button>
+        </div>
+        <div class="colores1">
+          <button class="negro" onclick="elegirColor('black')"></button>
+          <button class="grisOscuro" onclick="elegirColor('#808080')"></button>
+          <button class="granate"onclick="elegirColor('#800000')" ></button>
+          <button class="ocre1" onclick="elegirColor('#828207')"></button>
+          <button class="verdeCisterna" onclick="elegirColor('#008000')"></button>
+          <button class="azulCisterna" onclick="elegirColor('#008080')"></button>
+          <button class="azulOceano" onclick="elegirColor('#000080')"></button>
+          <button class="purpuraOscuro" onclick="elegirColor('#800080')"></button>
+          <button class="ocre2" onclick="elegirColor('#808040')"></button>
+          <button class="verdeOscuro" onclick="elegirColor('#004080')"></button>
+          <button class="azulito" onclick="elegirColor('#0080ff')"></button>
+          <button class="azulPocho" onclick="elegirColor('#004080')"></button>
+          <button class="azulPurpura" onclick="elegirColor('#4000ff')"></button>
+          <button class="marron" onclick="elegirColor('#804000')"></button>
+        </div>
+        <div class="colores2">
+          <button class="blanco" onclick="elegirColor('white')"></button>
+          <button class="grisClaro" onclick="elegirColor('#c0c0c0')"></button>
+          <button class="rojo1" onclick="elegirColor('#ff0000')"></button>
+          <button class="amarillo" onclick="elegirColor('#ffff00')"></button>
+          <button class="verdeFlojo" onclick="elegirColor('#00ff00')"></button>
+          <button class="cian" onclick="elegirColor('#00ffff')"></button>
+          <button class="azul" onclick="elegirColor('#0000ff')"></button>
+          <button class="rosa" onclick="elegirColor('#ff00ff')"></button>
+          <button class="amarilloPocho" onclick="elegirColor('#ffff80')"></button>
+          <button class="verdeRaro" onclick="elegirColor('#00ff80')"></button>
+          <button class="azulMuyPocho" onclick="elegirColor('#80ffff')"></button>
+          <button class="pupruraXD" onclick="elegirColor('#8080ff')"></button>
+          <button class="rojo2" onclick="elegirColor('#ff0080')"></button>
+          <button class="naranja" onclick="elegirColor('orange')"></button>
+        </div>
+        <div class="colorActual2">
+          <div class="color2" id="color2"></div>
+        </div>
+        <div class="colores3">
+          <button class="negro" onclick="elegirColor2('black')"></button>
+          <button class="grisOscuro" onclick="elegirColor2('#808080')"></button>
+          <button class="granate"onclick="elegirColor2('#800000')" ></button>
+          <button class="ocre1" onclick="elegirColor2('#828207')"></button>
+          <button class="verdeCisterna" onclick="elegirColor2('#008000')"></button>
+          <button class="azulCisterna" onclick="elegirColor2('#008080')"></button>
+          <button class="azulOceano" onclick="elegirColor2('#000080')"></button>
+          <button class="purpuraOscuro" onclick="elegirColor2('#800080')"></button>
+          <button class="ocre2" onclick="elegirColor2('#808040')"></button>
+          <button class="verdeOscuro" onclick="elegirColor2('#004080')"></button>
+          <button class="azulito" onclick="elegirColor2('#0080ff')"></button>
+          <button class="azulPocho" onclick="elegirColor2('#004080')"></button>
+          <button class="azulPurpura" onclick="elegirColor2('#4000ff')"></button>
+          <button class="marron" onclick="elegirColor2('#804000')"></button>
+        </div>
+        <div class="colores4">
+          <button class="blanco" onclick="elegirColor2('white')"></button>
+          <button class="grisClaro" onclick="elegirColor2('#c0c0c0')"></button>
+          <button class="rojo1" onclick="elegirColor2('#ff0000')"></button>
+          <button class="amarillo" onclick="elegirColor2('#ffff00')"></button>
+          <button class="verdeFlojo" onclick="elegirColor2('#00ff00')"></button>
+          <button class="cian" onclick="elegirColor2('#00ffff')"></button>
+          <button class="azul" onclick="elegirColor2('#0000ff')"></button>
+          <button class="rosa" onclick="elegirColor2('#ff00ff')"></button>
+          <button class="amarilloPocho" onclick="elegirColor2('#ffff80')"></button>
+          <button class="verdeRaro" onclick="elegirColor2('#00ff80')"></button>
+          <button class="azulMuyPocho" onclick="elegirColor2('#80ffff')"></button>
+          <button class="pupruraXD" onclick="elegirColor2('#8080ff')"></button>
+          <button class="rojo2" onclick="elegirColor2('#ff0080')"></button>
+          <button class="naranja" onclick="elegirColor2('orange')"></button>
+        </div>
+
+      </div>
+      <div class="statusbar">
+        <div class="informacion">Cuadro de ayuda</div>
+        <div class="coordenadas">243, 560</div>
+      </div>
+    </div>
+  </body>
+  <script src="js/codi.js"></script>
+</html>
+

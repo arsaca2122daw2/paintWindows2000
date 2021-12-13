@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,100&display=swap');
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    
+}
+
+body{
+    background-color: #c0c0c0;
+}
+
+.menus{
+    width: 100%;
+    height: 2.5vh;
+    background-color: #c0c0c0;
+
+}
+
+.archivo{
+    width: 90px;
+    height: 90%;
+    margin-top:1px;
+
+    border:none;
+    background-color: #c0c0c0;
+}
+
+.archivo:hover{
+    border-top: #d8d8d8 1px solid;
+    border-left: #d8d8d8 1px solid;
+    border-bottom: #959595 1px solid;
+    border-right: #959595 1px solid;
+
+}
+
+.archivo:active{
+    border-top: #959595 1px solid;
+    border-left: #959595 1px solid;
+    border-bottom: #d8d8d8 1px solid;
+    border-right: #d8d8d8 1px solid;
+
+}
+
+.engrudo{
+    display: flex;
+
+    width: 100%;
+    height: 85%;
+
+}
+
+.herramientas{
+    display: flex; /*hayq ue tocar*/
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 0.5%;
+    width:3%;
+    height: 100%;
+    background-color: #c0c0c0;
+
+}
+
+.herramientas button{
+    width: 35px; 
+    height: 35px;
+}
+
+.tipodeherramienta{
+    margin-top: 30px;
+    
+    width: 48px ;
+    height: 228px;
+
+    border-top: #7e7c7c 1px solid;
+    border-left: #7e7c7c 1px solid;
+    border-right: #d9d9d9 1px solid;
+    border-bottom: #d9d9d9 1px solid;
+
+}
+
+.herramientaLapiz{
+    display:flex;
+    flex-direction: column;
+}
+
+.herramientaLapiz button{
+    width: 100%;
+    height:5%;
+    background-color: #c0c0c0;
+    border-top: #7e7c7c 1px solid;
+    border-left: #7e7c7c 1px solid;
+    border-right: #d9d9d9 1px solid;
+    border-bottom: #d9d9d9 1px solid;
+
+    border: none;
+}
+
+.herramientaGrosor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.herramientaGrosor button{
+    width: auto;
+    height: 4.07%;
+    background-color: #c0c0c0;
+    border-top: #d9d9d9 1px solid;
+    border-left: #d9d9d9 1px solid;
+    border-right: #7e7c7c 1px solid;
+    border-bottom: #7e7c7c 1px solid;
+}
+
+.herramientaGrosor button:active{
+    border-top: #7e7c7c 1px solid;
+    border-left: #7e7c7c 1px solid;
+    border-right: #d9d9d9 1px solid;
+    border-bottom: #d9d9d9 1px solid;
+}
+
+.canvas{
+    width: 96.7%;
+    height: 86vh;
+    background-color: #808080;
+}
+
+canvas{
+
+    background-color: white;
+    border-bottom: rgb(218, 218, 218) 0.1px solid;
+    border-right: rgb(218, 218, 218) 0.1px solid;
+
+}
+.colores{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 8vh;
+    background-color: #c0c0c0;
+    border-bottom: #959595 1px solid;
+}
+
+.colorActual{
+    display: block;
+    position: absolute;
+
+    margin-left: 40px;
+    margin-top: 12px;
+
+    background-color: white;
+    width: 40px ;
+    height: 40px;
+
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;;
+
+}
+
+.color{
+    width: 20px;
+    height: 20px;
+
+    margin: auto;
+    margin-top: 24%;
+       
+    background-color: black;
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;
+}
+
+.colores1{
+    margin-top: 12px;
+    margin-left: 100px;
+}
+
+.colores2{
+    margin-left: 100px;
+    
+}
+
+.colores1 button{
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid; 
+
+    width: 20px;
+    height: 20px;
+}
+
+.colores2 button{
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;
+
+    width: 20px;
+    height: 20px;
+}
+
+.colorActual2{
+    display: block;
+    position: absolute;
+
+    margin-left: 27vw;
+    margin-top: 12px;
+
+    background-color: white;
+    width: 40px ;
+    height: 40px;
+
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;;
+
+}
+
+.color2{
+    width: 20px;
+    height: 20px;
+
+    margin: auto;
+    margin-top: 24%;
+       
+    background-color: white;
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;
+}
+
+.colores3{
+    display: block;
+    position: absolute;
+    
+    margin-top: 12px;
+    margin-left: 30vw;
+}
+
+.colores4{
+    display: block;
+    position: absolute;
+
+    margin-left: 30vw;
+    margin-top: 3.4vh;
+    
+}
+
+.colores3 button{
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid; 
+
+    width: 20px;
+    height: 20px;
+}
+
+.colores4 button{
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;
+
+    width: 20px;
+    height: 20px;
+}
+
+.negro{
+    background-color: black ;
+}
+.grisOscuro{
+    background-color:#808080    ;
+}
+.granate{
+    background-color: #800000    ;
+}
+.ocre1{
+    background-color: #828207
+    ;
+}
+.verdeCisterna{
+    background-color: #008000
+    ;
+}
+.azulCisterna{
+    background-color:#008080
+    ;
+}
+.azulOceano{
+    background-color: #000080
+
+;
+}
+.purpuraOscuro{
+    background-color: #800080
+    ;
+}
+.ocre2{
+    background-color: #808040
+    ;
+}
+.verdeOscuro{
+    background-color:#004080
+
+    ;
+}
+.azulito{
+    background-color:#0080ff
+    ;
+}
+.azulPocho{
+    background-color:#004080
+    ;
+}
+.azulPurpura{
+    background-color: #4000ff
+    ;
+}
+.marron{
+    background-color: #804000
+    ;
+}
+.blanco{
+    background-color: white;
+}
+.grisClaro{
+    background-color:#c0c0c0
+    ;
+}
+.rojo1{
+    background-color: #ff0000
+    ;
+}
+.amarillo{
+    background-color: #ffff00
+    ;
+}
+.verdeFlojo{
+    background-color: #00ff00
+    ;
+}
+.cian{
+    background-color:#00ffff
+    ;
+}
+.azul{
+    background-color:#0000ff
+    ;
+}
+.rosa{
+    background-color:#ff00ff
+    ;
+}
+.amarilloPocho{
+    background-color: #ffff80
+    ;
+}
+.verdeRaro{
+    background-color: #00ff80
+    ;
+}
+.azulMuyPocho{
+    background-color:#80ffff
+    ;
+}
+.pupruraXD{
+    background-color:#8080ff
+    ;
+}
+.rojo2{
+    background-color:#ff0080
+    ;
+}
+.naranja{
+    background-color:orange
+    ;
+}
+
+.lapiz{
+    background-image: url("/imagenes_herramientas/lapiz.jpg");
+    background-size: cover;
+
+}
+.goma{
+    background-image: url("/imagenes_herramientas/goma.JPG");
+    background-size: cover;
+}
+.pincel{
+    background-image: url("/imagenes_herramientas/pincel.JPG");
+    background-size: cover;
+}
+.lineaDisc{
+    background-image: url("/imagenes_herramientas/discontinua.png");
+    background-size: 50px;
+    background-color:#c0c0c0
+}
+#texto{
+    background-image: url("/imagenes_herramientas/texto.JPG");
+    background-size: cover;
+}
+#italic{
+    background-image: url("/imagenes_herramientas/italic.png");
+    background-size: contain;
+    background-color:#c0c0c0
+}
+#negrita{
+    background-image: url("/imagenes_herramientas/negrita.png");
+    background-size: contain;
+    background-color:#c0c0c0
+}
+#fuente{
+    background-image: url("/imagenes_herramientas/fuente.png");
+    background-size: cover;
+    background-color:#c0c0c0
+}
+#linea{
+    background-image: url("/imagenes_herramientas/linea.JPG");
+    background-size: cover;
+}
+#circulo{
+    background-image: url("/imagenes_herramientas/circulo.JPG");
+    background-size: cover;
+}
+#rectangulo{
+    background-image: url("/imagenes_herramientas/rectangulo.JPG");
+    background-size: cover;
+}
+#relleno{
+    background-image: url("/imagenes_herramientas/rellenar.JPG");
+    background-size: cover;
+    
+}
+#triangulo{
+    background-image: url("/imagenes_herramientas/traingulo.png");
+    background-size: cover;
+    background-color: #c0c0c0;
+}
+#imagenMas{
+    background-image: url("/imagenes_herramientas/imagenMas.png");
+    background-size: cover;
+}
+
+#borrarLienzo{
+    display: block;
+    position: absolute;
+
+    margin-left: 52vw;
+    margin-top: 12px;
+
+    
+    background-image: url("/imagenes_herramientas/papelera.jpg");
+    background-size: cover;
+    width: 40px ;
+    height: 40px;
+
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;;
+}
+
+#ctrlZ{
+    display: block;
+    position: absolute;
+
+    margin-left: 55vw;
+    margin-top: 12px;
+    
+    background-image: url("/imagenes_herramientas/undo.png");
+    background-size:contain;
+    width: 40px ;
+    height: 42px;
+
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;;
+}
+
+#negativo{
+    display: block;
+    position: absolute;
+
+    margin-left: 58vw;
+    margin-top: 12px;
+    
+    background-image: url("/imagenes_herramientas/negativo.png");
+    background-size: contain;
+    width: 40px ;
+    height: 42px;
+
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;;
+}
+
+#ByN{
+    display: block;
+    position: absolute;
+
+    margin-left: 61vw;
+    margin-top: 12px;
+    
+    background-image: url("/imagenes_herramientas/blancoNegro.png");
+    background-size: contain;
+    width: 40px ;
+    height: 42px;
+
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;;
+}
+
+#guardarImg{
+    display: block;
+    position: absolute;
+
+    margin-left: 64vw;
+    margin-top: 12px;
+    
+    background-image: url("/imagenes_herramientas/disquete.png");
+    background-size: cover;
+    width: 40px ;
+    height: 42px;
+
+    border-top: rgb(93, 93, 93) 1px solid;
+    border-left: rgb(93, 93, 93) 1px solid;
+    border-bottom: rgb(172, 172, 172) 1px solid;
+    border-right: rgb(172, 172, 172) 1px solid;;
+}
+
+.statusbar{
+    display: flex;
+    margin-top:3px;
+    width: 100%;
+    height: 4%;
+    background-color: #c0c0c0;
+    border-top: #959595 1px solid;
+}
+
+.informacion{
+    margin-top: 0.4%;
+    margin-left: 3px;
+    width: 95%;
+    height: 100%;
+    border-right: #959595 1px solid;
+    
+}
+
+.coordenadas{
+    text-align: center;
+    margin-top: 7px;
+    
+    align-self: center;
+    width: 5%;
+    height: 100%;
+    
+}
